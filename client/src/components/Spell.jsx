@@ -1,12 +1,16 @@
 import React, {useState, useEffect} from "react";
 
 const Spell = (props) => {
-  const {index, name} = props;
+  const {index, name,
+    onNameClick
+  } = props;
 
   return (
-    <div className="spell-container" key={index}>
-      <div className="spell-name">{name}</div>
-    </div>
+      <div className={ `spell-name ${index}`}
+        key={index}
+        onClick={() => onNameClick(index)}
+        >{name}
+      </div>
   )
 };
 
