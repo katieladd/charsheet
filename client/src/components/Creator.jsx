@@ -10,37 +10,37 @@ const Creator = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-    <label>Name</label>
-    <input {...register("name")} />
-    <select {...register("pronouns")}>
-      <option value="other">other</option>
-      <option value="sheher">she/her</option>
-      <option value="hehim">he/him</option>
-      <option value="theythem">they/them</option>
-    </select>
+      <label>Name</label>
+      <input {...register("name")} />
+      <select {...register("pronouns")}>
+        <option value="other">other</option>
+        <option value="sheher">she/her</option>
+        <option value="hehim">he/him</option>
+        <option value="theythem">they/them</option>
+      </select>
 
-    <label>Strength</label>
-    <select {...register("strength")} />
+      <label>Strength</label>
+      <select {...register("strength")} />
 
-    <label>Dexterity</label>
-    <select {...register("dexterity")} />
+      <label>Dexterity</label>
+      <select {...register("dexterity")} />
 
-    <label>Constitution</label>
-    <select {...register("constitution")} />
+      <label>Constitution</label>
+      <select {...register("constitution")} />
 
-    <label>Wisdom</label>
-    <select {...register("wisdom")} />
+      <label>Wisdom</label>
+      <select {...register("wisdom")} />
 
-    <label>Intelligence</label>
-    <select {...register("intelligence")} />
+      <label>Intelligence</label>
+      <select {...register("intelligence")} />
 
-    <label>Charisma</label>
-    <select {...register("charisma")} />
+      <label>Charisma</label>
+      <select {...register("charisma")} />
 
-    <br></br>
-    <input type="submit" />
+      <br></br>
+      <input type="submit" />
     </form>
-  )
-}
+  );
+};
 
 export default Creator;
